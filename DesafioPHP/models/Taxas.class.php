@@ -47,7 +47,7 @@ function visualizaTaxa(){
                 echo '<td>'.$linha['id_imposto'].'</td>';
                 echo '<td style="width:200px">'.$tipoP.'</td>';
                 echo '<td>'.number_format($linha['imposto'],2,",","").' %</td>';                    
-                echo '<td><a href="index.php?pg=views/delete&id='.$linha['id_imposto'].'&action=taxas" title="Excluir esse dado"><img src="views/img/ico-excluir.png" width="16" height="16" alt="Excluir"></a></td>';  
+                 echo '<td><a href="index.php?pg=models/deletar&acao=taxas&id='.$linha['id_imposto'].'" title="Excluir esse dado"><img src="views/img/ico-excluir.png" width="16" height="16" alt="Excluir"></a></td>';  
                 echo "</tr>";
       }
 }
