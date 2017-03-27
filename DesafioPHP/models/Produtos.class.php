@@ -63,7 +63,7 @@ function produtoCadastrado(){
                   echo '<td style="width:120px">'.$tipoP.'</td>';
                   echo '<td>'.$linha['un_medida'].'</td>';
                   echo '<td>R$ '.$linha['preco_liquido'].'</td>';                 
-                  echo '<td><a href="index.php?pg=Views/cadastra-produtos&acao=delet&id='.$linha['id_codigo'].'" title="Excluir esse dado"><img src="views/img/ico-excluir.png" width="16" height="16" alt="Excluir"></a></td>'; 
+                  echo '<td><a href="index.php?pg=models/deletar&acao=produtos&id='.$linha['id_codigo'].'" title="Excluir esse dado"><img src="views/img/ico-excluir.png" width="16" height="16" alt="Excluir"></a></td>'; 
                   echo '<input type="hidden" id="action" name="action" />';
                   echo '</tr>';
       }
